@@ -16,7 +16,11 @@
   "devDependencies": {
     "gatsby": "^2.13.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "inquirer": "^6.2.2",
+    "inquirer-directory": "^2.1.0",
+    "plop": "^2.3.0",
+    "prettier": "^1.15.2"
   },
   "dependencies": {
     "react-helmet": "^5.2.0",
