@@ -1,0 +1,71 @@
+.headerFixed {
+  background-color: #FFF;
+  margin-bottom: 1.45rem;
+  border-bottom: 1px solid #CCC;
+  position: fixed;
+  z-index: 3000;
+  width: 100%;
+}
+
+.headerBar {
+  min-height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.siteTitle {
+  text-decoration: none;
+  display: block;
+  margin: .2em 0;
+}
+
+.siteLogo {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 0;
+}
+
+.menuLink {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.85;
+}
+
+.rightMenu {
+  display: flex;
+}
+
+.avatarImg {
+  display: flex;
+  align-items: center;
+  /* margin-left: 2em;
+  margin-right: 2em; */
+}
+
+.avatarImg img {
+  margin-bottom: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.avatarImg span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  background-color: green;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 12px;
+  padding-left: 4px;
+}
+
+.avatarImg span:hover {
+  color: green;
+  background-color: #FFF;
+  border: 2px solid green;
+}

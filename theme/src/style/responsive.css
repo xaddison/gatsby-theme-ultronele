@@ -1,0 +1,244 @@
+/**
+ * Start to responsive layout refactoring to the whole system
+ * @2019/05/27
+ */
+
+/* desktop screen */
+@media only screen and (min-width: 480px) {
+
+  .visible {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .mob-flex {
+    display: none;
+  }
+
+  .main-menus {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .nav-menu-item {
+    /* display: inline-block; */
+    display: list-item;
+    margin: 1em 10px 1em;
+    font-weight: 500;
+    width: 100px;
+    text-decoration: none;
+  }
+
+  .main-menus .nav-menu-item:last-child {
+    display: none;
+  }
+
+  .menu-link-close {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.85;
+  }
+  
+  .nav-menu-item.active::before {
+    background: var(--currentTheme);
+    content: '';
+    height: 2px;
+    top: 0px;
+    position: absolute;
+    width: 100px;
+  }
+  
+
+  .main-avatar-margin {
+    margin: 0 2em;
+  }
+
+
+  .main-menu-expander {
+    display: none;
+  }
+
+  .sec-hd-pad {
+    padding-left: 0;
+  }
+
+  .tuto-item-resp {
+    margin-bottom: 20px;
+  }
+
+  .left-image-resp {
+    margin-right: 4px;
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .right-intro-resp {
+    height: 200px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #DEDEDE;
+  }
+
+  .left-tuto-resp {
+    padding: 40px 60px;
+  }
+
+  .left-right-resp {
+    margin: 40px 0;
+    flex-direction: row;
+  }
+
+  .right-pnl-resp {
+    margin-right: 40px;
+  }
+
+  .anwser-resp {
+    min-width: 400px;
+  }
+
+  .tut-head-resp {
+    height: 48px;
+  }
+
+}
+
+/* mobile screen */
+@media only screen and (max-width: 480px) {
+ 
+  .visible {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+
+  .mob-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+ 
+  footer {
+    display: none;
+  }
+
+  .nav-menu-item {
+    display: list-item;
+    margin: 1em 20px 1em;
+    width: 100px;
+  }
+
+  .main-menus.open {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    top: 62px;
+    z-index: 1000;
+    list-style: none;
+    
+    background-color: var(--currentTheme);
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .main-menus.close {
+    display: none;
+  }
+
+  .menu-link-close {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  .main-menu-avatar {
+    display: none;
+  }
+
+  .main-avatar-margin {
+    margin: 0 1em;
+  }
+
+  .main-menu-expander {
+    height: 40px;
+    background: transparent;
+    border: none;
+  }
+
+  .main-menu-expander span.icon-bar {
+    width: 18px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+  }
+
+  .main-menu-expander span.icon-bar + span.icon-bar {
+    margin-top: 4px;
+  }
+
+  .main-menu-expander:active span.icon-bar {
+    background-color: #FFF;
+  }
+
+  .sec-hd-pad {
+    padding-left: 20px;
+  }
+
+  .tuto-item-resp {
+    margin-bottom: 10px;
+  }
+
+  .tuto-item-resp p {
+    max-width: 180px;
+    max-height: 100px;
+  }
+
+  .tuto-item-resp h4 {
+    max-height: 70px;
+    overflow: hidden;
+  }
+
+  .left-image-resp {
+    margin-right: 0px;
+    height: 180px;
+    width: 180px;
+    min-width: 180px;
+  }
+
+  .right-intro-resp {
+    height: 180px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #DEDEDE;
+  }
+
+  .left-tuto-resp {
+    padding: 20px 10px;
+  }
+
+  .left-right-resp {
+    margin: 10px 0;
+    flex-direction: column;
+  }
+
+  .right-pnl-resp {
+    margin: 10px;
+  }
+
+  .anwser-resp {
+    min-width: 300px;
+  }
+
+  .tut-head-resp {
+    height: auto;
+  }
+
+
+}

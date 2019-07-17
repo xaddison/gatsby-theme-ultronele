@@ -1,0 +1,172 @@
+.post {
+  display: flex;
+  padding-top: 62px;
+  min-height: 74vh;
+}
+
+.post .side-panel {
+  width: 20rem;
+  background-color: #FFF;
+  border-left: 1px solid #CCC;
+}
+
+.post .side-panel .fixed {
+  position: fixed;
+  top: 80px;
+  margin-left: 40px;
+}
+
+.post article {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.post article h3 {
+  margin-top: 3rem;
+}
+
+.post article h2 {
+  margin-top: 3rem;
+}
+
+.post article h4 {
+  margin-top: 3rem;
+}
+
+/* center the image */
+.post article p > img {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* center the image */
+.post article p > a > img {
+  max-width: 240px;
+  display: block;
+  margin: 0 auto;
+}
+
+.post article p > a {
+  cursor: default;
+}
+
+.post article ul {
+  margin-top: 30px;
+}
+
+.post article li > ul {
+  margin-top: 0;
+}
+
+.post article .title {
+  color: #FFF;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  /* font-weight: 300; */
+  padding: 20px;
+}
+
+.post article .date {
+  color: #FFF;
+  position: absolute;
+  top: 200px;
+  left: 122px;
+}
+
+.post article .content {
+  margin-top: 40px;
+}
+
+.post article .content.with-panel {
+  padding: 0 40px;
+}
+
+/* fix anchor navigation hidden by header bar */
+.post article :target::before {
+  content: "";
+  display: block;
+  height: 80px; /* fixed header height*/
+  margin: -80px 0 0; /* negative fixed header height */
+}
+
+.post table {
+  border-collapse: collapse;
+}
+
+.post table td,
+.post table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.post table tr:nth-child(even){
+  background-color: #ffffff;
+}
+
+.post table tr:hover {
+  background-color: #ddd;
+}
+
+.post table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--currentTheme);
+  color: white;
+}
+
+.post table td:first-child {
+  background-color: #C7C7C7;
+  width: 200px;
+  border-right: 1px solid #999;
+  color: #333;
+}
+
+.post table th:first-child {
+  width: 150px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+  .post article .title.resp {
+    left: 20px;
+    text-shadow: 0px 1px #999;
+  }
+
+  .post article .date.resp {
+    left: 42px;
+    text-shadow: 0px 1px #999;
+  }
+
+  .post article .content.resp {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .post article h2 {
+    margin-top: 0;
+  }
+
+  .post article p > img {
+    max-width: 360px;
+  }  
+  
+  .post table{
+    table-layout: fixed;
+  }
+  .post table td:first-child,
+  .post table th:first-child {
+    width: 85px;
+  }
+  .post table td,
+  .post table th {
+    width: 85px;
+  }
+
+
+} 

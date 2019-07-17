@@ -1,0 +1,67 @@
+.category {
+  color: #FFF;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  /* font-weight: 300; */
+  padding: 20px;
+}
+
+.tags {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 100%;
+  height: 40px;
+}
+
+.tag {
+  color: #FFF;
+  padding: 4px 10px;
+  border: 1px solid #FFF;
+  border-radius: 16px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.twoColumn {
+  display: flex;
+}
+
+.leftColumn {
+  flex: 1;
+}
+
+.rightColumn {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.sectionHead {
+  font-weight: 500;
+  /* margin: 30px auto; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sectionIntro {
+  padding: 0 20px;
+}
+
+.tutolist {
+  display: flex;
+  flex-direction: column;
+}
+
+code { 
+  background-color: #DDD;
+  color: #000;
+}
+
+.backBtn {
+  display: block;
+  text-decoration: none;
+  margin: 20px auto 0 20px;
+  color: var(--currentTheme);
+}

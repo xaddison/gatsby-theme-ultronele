@@ -1,0 +1,54 @@
+.tutorialsColumn {
+  display: flex;
+  margin-bottom: 30px;
+  min-height: 400px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100%;
+  margin: 10px;
+}
+
+.tutHeadCard {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #EEE;
+  width: 100%;
+  max-height: 220px;
+  min-height: 160px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.tutHeadImg {
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.tutHeadFooter {
+  height: 86px;
+  background-color: #FFF;
+  padding: 4px;
+}
+
+.tutHeadTitle {
+  padding: 2px 6px 2px 6px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  max-height: 48px;
+  overflow-y: hidden;
+  /* height: 48px; */
+}
+
+.tutHeadDate {
+  margin-bottom: 0;
+  font-size: .9em;
+  color: #888;
+  padding-left: 6px;
+}

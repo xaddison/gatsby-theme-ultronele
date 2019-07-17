@@ -13,9 +13,7 @@
   },
   "dependencies": {
     "gatsby": "^2.13.1",
-    "gatsby-theme-jam-example": "*",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "gatsby-theme-ultronele": "*"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

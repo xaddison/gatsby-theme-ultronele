@@ -1,0 +1,69 @@
+/* 
+ * Global theme definition for one color
+ * referenced by gatsby-browser.js
+ *
+ * @2019/04/18
+*/
+
+/* add color reference @2019/05/24 */
+:root {
+
+  --primary: #47BA47;
+  /* other options */
+  --cool: #009AD6;
+  --warm: #FF4040;
+  --pink: #FB2193;
+  --orange: #F85E20;
+  --purple: #9B30FF;
+  /* its a customer theme referenced in user guide */
+  --mytheme: #7A67EE;
+
+  --currentTheme: var(--primary);
+}
+
+.ultron-txt-color {
+  color: var(--currentTheme);
+}
+
+.ultron-border {
+  border: 2px solid var(--currentTheme);
+}
+
+.ultron-bg-color {
+  background-color: var(--currentTheme);
+}
+
+.ultron-left-border {
+  border-left: 2px solid var(--currentTheme);
+}
+
+/* interactive section @2019/01/28*/
+a:hover {
+  color: var(--currentTheme);
+}
+
+a strong:hover,
+a h3:hover, 
+a h2:hover, 
+a h1:hover {
+  color: var(--currentTheme);
+}
+
+blockquote {
+  color: #000;
+  border-left: 4px solid var(--currentTheme);
+  padding-left: 16px;
+  margin: 20px 0 20px;
+  font-size: 18px;
+}
+
+.carousel {
+  width: 100%;
+  min-height: 150px;
+}
+
+.hori-progressbar {
+  max-width: 100%;
+  background-color: var(--currentTheme);
+  height: 2px;
+}
