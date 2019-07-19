@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-theme-ultronele",
+  "name": "gatsby-theme-ultronele-with-demo",
   "author": "Wenzhi Li <lwz7512@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/runbytech/gatsby-theme-ultronele.git"
   },
-  "version": "1.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "workspaces": [
