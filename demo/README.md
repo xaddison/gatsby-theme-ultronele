@@ -23,7 +23,7 @@ is [HERE!](https://ultronele.netlify.com/)
 
 ## Features
 
-* extremely fluent visit experience
+* extremely smooth visit experience
 * fast setup and easy depolyment procedure
 * gamefication learning experience
 * category/tutorial/quiz generation by cli easily
@@ -95,3 +95,28 @@ if you like this product, and want to find something new to practice reactjs cod
 * send your .pdf/.docx/images/videos to my email
 * reorganize the content to the source file and publish
 * give you credit by recording you to the contributer list
+
+## Content structure by convention
+
+    
+    ├── content
+      ├── assets
+        ├── imagefoldera
+        ├── imagefolderb
+      ├── category
+        ├── coursetypea
+          ├── tutoriala
+            ├── 1-section.md
+            ├── 2-section.md
+            ├── 3-section.md
+            ├── x-section.md
+            ├── test.md    # this file hold tutorial quiz questions
+          ├── tutorialb
+          ├── tutorialc
+        ├── coursetypeb
+        ├── coursetypec
+      ├── pagea.md    # first level navigation page of your site
+      ├── pageb.md
+      ├── pagec.md
+      ├── paged.md
+
