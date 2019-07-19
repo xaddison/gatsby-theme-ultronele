@@ -1,44 +1,29 @@
-# Gatsby Theme Jam Submission Example
+# Gatsby Theme UltronEle Example
 
-This repo is an example and potential starting point for theme creators.
+This repo is a Gatsby theme package for the [UltronEle](https://github.com/runbytech/ultron-ele)
 
 It includes:
-- a bare-bones theme (located in `theme/`) that includes basic setup
+- a UltronEle theme (located in `theme/`) that includes core framework/page generators
 - a demo site (located in `demo/`) that installs the theme
 - a Yarn workspaces configuration so the theme and demo can be worked on simultaneously
 
 ## How to use this repo
 
-**NOTE:** Make sure to replace `USERNAME` with your GitHub username and `THEMENAME` with your theme name.
-
 1.  Fork this repo.
 
-2.  Rename the forked repo `gatsby-theme-THEMENAME`. (Make sure to replace `THEMENAME` with your chosen name.)
-
-3.  Get the theme set up locally.
+2.  Get the theme set up locally.
     ```sh
     # clone the repo
-    git clone git@github.com:USERNAME/gatsby-theme-THEMENAME.git
+    git clone git@github.com:runbytech/gatsby-theme-ultronele.git
 
     # move into the directory
-    cd gatsby-theme-THEMENAME
+    cd gatsby-theme-ultronele
 
     # install dependencies
     yarn
     ```
 
-4.  Update `package.json` with your info.
-    ```diff
-      {
-    +   "name": "gatsby-theme-THEMENAME",
-    +   "author": "Your Name <name@example.com>",
-        "repository": {
-          "type": "git",
-    +     "url": "https://github.com/USERNAME/gatsby-theme-THEMENAME.git"
-        },
-    ```
-
-5.  Start the demo site.
+3.  Start the demo site.
     ```sh
     yarn workspace demo develop
     ```
@@ -47,12 +32,27 @@ It includes:
 
     **NOTE:** If you’re new to Yarn workspaces, check out [this post](https://www.gatsbyjs.org/blog/2019-05-22-setting-up-yarn-workspaces-for-theme-development/) for details.
 
-6.  Start editing the theme! The demo site is configured to use the local theme, so any changes you make to the local `theme` directory will be reflected on the demo site for easy local development.
-
-7.  Follow the [submission checklist](./theme/README.md#submission-checklist) to make sure your theme qualifies to win!
-
-8.  [Submit your theme](https://themejam.gatsbyjs.org/submit) to win!
 
 ## More information
 
-For contest rules and more information, see [the Theme Jam website](https://themejam.gatsbyjs.org).
+product official site is [here](http://ultronele.com)
+product hunt page is [here](https://www.producthunt.com/posts/ultronele)
+
+## Contribution is Welcome
+
+if you like this product, and want to find something new to practice reactjs coding, please join me! UltronEle is in early cultivation stage, it may be a fresh and interesting experience to witness it growing to a successful product.
+
+### For the ReactJS developer
+
+* fork this repository
+* made your modifications or improvements
+* request a PR
+* notify me by email: lwz7512[at]gmail.com 
+* invite you to join collaborators
+
+### For the Content producer
+
+* planning your courses that you want to be itegrated to this product permanently
+* send your .pdf/.docx/images/videos to my email
+* reorganize the content to the source file and publish
+* give you credit by recording you to the contributer list

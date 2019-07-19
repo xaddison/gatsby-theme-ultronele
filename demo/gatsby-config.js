@@ -28,7 +28,9 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-theme-ultronele",
-      options: {}
+      options: {
+        // contentPath: `content`
+      }
     }
   ],
 }

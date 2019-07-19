@@ -1,23 +1,31 @@
-# Gatsby Theme Jam Example Submission
+# Gatsby Theme UltronEle
 
-This is a bare-bones Gatsby theme to showcase how a [Theme Jam](https://themejam.gatsbyjs.org) submission should look.
+GTU, one of components of UltronEle product, is a UltronEle Gatsby Theme which can be installed as package in your own Gatsby site.
 
-See the [live demo](https://gatsby-theme-jam-example.netlify.com)
+See the [live demo](https://ultronele.netlify.com), more info about this product is [here](http://ultronele.com)
 
-## Installation
+
+## How to use GTU
+
+Two options:
+
+* start from a [UltronEle Starter](https://github.com/runbytech/ultronele-starter)
+* integrated to your existing gatsby site while you're familiar to Gatsby development
+
+## GTU Installation to your existing gatsby site
 
 To use this theme in your Gatsby sites, follow these instructions:
 
 1.  Install the theme
     ```sh
-    npm install --save gatsby-theme-jam-example
+    npm install --save gatsby-theme-ultronele
     ```
 
 2.  Add the theme to your `gatsby-config.js`:
     ```js
     module.exports = {
       plugins: [
-        'gatsby-theme-jam-example'
+        'gatsby-theme-ultronele'
       ]
     }
     ```
@@ -27,25 +35,34 @@ To use this theme in your Gatsby sites, follow these instructions:
     gatsby develop
     ```
 
-## Submission Checklist
+## Checklist to integrate GTU
 
-To ensure your Theme Jam submission [follows the rules](https://themejam.gatsbyjs.org/rules), use this checklist:
+* create `content` folder to hold your .md files
+* define `contentPath` property in your site gatsby-config.js under plugins section, if you dont use `content` folder to hold your .md files
+* create `category` folder to hold course category and tutorials content
 
-- [ ] Use our [accessibility guide][a11y] to ensure your site meets our accessibility standards
-- [ ] Run a performance audit using [Lighthouse][] and/or [WebPageTest][]
-- [ ] Set up a live demo using [Netlify][] or [GitHub Pages][]
-- [ ] Add installation documentation to the README
-- [ ] Update the `name` field in `package.json`
-- [ ] Update the `author` field in `package.json`
-- [ ] Update the `repository` field in `package.json`
-- [ ] Make sure the theme’s `keywords` in `package.json` include `gatsby`, `gatsby-theme`, and `gatsby-plugin`
-- [ ] Publish your theme to npm ([docs][npmpublish])
-- [ ] Submit your theme at https://themejam.gatsbyjs.org
 
-[a11y]: https://gatsbyjs.org/docs/making-your-site-accessible#how-to-improve-accessibility
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/
-[axe]: https://www.deque.com/axe/
-[WebPageTest]: http://webpagetest.org/
-[Netlify]: https://netlify.com
-[GitHub Pages]: https://pages.github.com/
-[npmpublish]: https://docs.npmjs.com/cli/publish
+## Content structure by convention
+
+    
+    ├── content
+      ├── assets
+        ├── imagefoldera
+        ├── imagefolderb
+      ├── category
+        ├── coursetypea
+          ├── tutoriala
+            ├── 1-section.md
+            ├── 2-section.md
+            ├── 3-section.md
+            ├── x-section.md
+            ├── test.md    # this file hold tutorial quiz questions
+          ├── tutorialb
+          ├── tutorialc
+        ├── coursetypeb
+        ├── coursetypec
+      ├── pagea.md    # first level navigation page of your site
+      ├── pageb.md
+      ├── pagec.md
+      ├── paged.md
+
