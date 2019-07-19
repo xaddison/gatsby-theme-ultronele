@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/runbytech/gatsby-theme-ultronele.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "workspaces": [
     "theme",
