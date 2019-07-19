@@ -1,4 +1,4 @@
-# Gatsby Theme UltronEle Example
+# Gatsby Theme UltronEle with demo
 
 This repo is a Gatsby theme package for the [UltronEle](https://github.com/runbytech/ultron-ele)
 
