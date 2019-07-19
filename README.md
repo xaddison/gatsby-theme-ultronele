@@ -1,10 +1,16 @@
 # Gatsby Theme UltronEle with demo
 
-This repo is a Gatsby theme package for the [UltronEle](https://github.com/runbytech/ultron-ele)
+> UltronEle, the world’s fastest LMS engine, this repo is a Gatsby theme package for the [UltronEle](https://github.com/runbytech/ultron-ele)
+
+<p align="center">
+  <a href="http://ultronele.com">
+    <img alt="UltronEle" src="demo/static/logo_ultronele_3.png" width="300" height="180"/>
+  </a>
+</p>
 
 It includes:
-- a UltronEle theme (located in `theme/`) that includes core framework/page generators
-- a demo site (located in `demo/`) that installs the theme
+- a UltronEle theme (located in [`theme/`](./theme)) that includes core framework/page generators
+- a demo site (located in [`demo/`](./demo)) that installs the theme
 - a Yarn workspaces configuration so the theme and demo can be worked on simultaneously
 
 ## How to use this repo
