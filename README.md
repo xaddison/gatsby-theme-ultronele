@@ -42,8 +42,8 @@ It includes:
 
 ## More information
 
-product official site is [here](http://ultronele.com)
-product hunt page is [here](https://www.producthunt.com/posts/ultronele)
+- product official site is [here](http://ultronele.com)
+- product hunt page is [here](https://www.producthunt.com/posts/ultronele)
 
 ## Contribution is Welcome
 
@@ -51,15 +51,15 @@ if you like this product, and want to find something new to practice reactjs cod
 
 ### For the ReactJS developer
 
-* fork this repository
-* made your modifications or improvements
-* request a PR
-* notify me by email: lwz7512[at]gmail.com 
-* invite you to join collaborators
+- fork this repository
+- made your modifications or improvements
+- request a PR
+- notify me by email: lwz7512[at]gmail.com 
+- invite you to join collaborators
 
 ### For the Content producer
 
-* planning your courses that you want to be itegrated to this product permanently
-* send your .pdf/.docx/images/videos to my email
-* reorganize the content to the source file and publish
-* give you credit by recording you to the contributer list
+- planning your courses that you want to be itegrated to this product permanently
+- send your .pdf/.docx/images/videos to my email
+- reorganize the content to the source file and publish
+- give you credit by recording you to the contributer list
