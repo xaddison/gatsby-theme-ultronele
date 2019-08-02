@@ -2,6 +2,9 @@
  * Ultra-ELE homepage
  * 
  * @2019/02/02
+ * 
+ * refactoring to component in order to resolve mobile responsive bug
+ * @2019/08/02
  */
 import React, { useState, useEffect }  from 'react'
 
@@ -14,37 +17,58 @@ import Tutorials, { TutorialList } from '../components/tutorials'
 import Swiper from '../components/swiper'
 import useMedia480 from '../hooks/useMedia480'
 
-const IndexPage = ({data, location}) => { 
-
-  const { catedocs, tutorials } = data
-  // console.log(tutorials)
-  // responsive layout by media query @2019/05/28
-  const mobile = useMedia480()
+class IndexPage extends React.Component { 
   
-  return (
-    <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `elms`, `elearning`]} />
-      
-      {!mobile &&
-        <>
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       ismobile: false
+    }
+  }
+
+  resizeHandler = mq => {
+    this.setState({ismobile: mq.matches})
+  }
+
+  // NOTE: write here to get window obj @2019/08/02
+  componentDidMount(){
+    const con = "(max-width: 480px)"
+    const mq = window.matchMedia(con)
+    mq.addListener(this.resizeHandler)
+    this.setState({ismobile: mq.matches})
+  }
+  
+  render(){
+
+    const { catedocs, tutorials } = this.props.data
+
+    if(this.state.ismobile){
+      return (
+        <Layout>
+          <SEO title="Home" keywords={[`gatsby`, `elms`, `elearning`]} />
+          <Swiper data={catedocs} />
+          <TutorialList data={tutorials} />
+        </Layout>
+      )
+    }else{
+      return (
+        <Layout>
+          <SEO title="Home" keywords={[`gatsby`, `elms`, `elearning`]} />
           <h3 style={{paddingTop: `1.45rem`}}>Topics and Skills</h3>
           <Gallery data={catedocs} />
           <h3>Start your journey</h3>
           <Tutorials data={tutorials} />
-        </>
-      }
-      {mobile &&
-        <>
-          <Swiper data={catedocs} />
-          <TutorialList data={tutorials} />
-        </>
-      }
+        </Layout>
+      )
+    }
+  
+  }
 
-    </Layout>
-  )
 }
 
 export default IndexPage
+
 
 
 export const IndexQuery = graphql`
@@ -78,7 +102,7 @@ export const IndexQuery = graphql`
 
     # query latest tutorials files
     tutorials: allMarkdownRemark(
-      limit: 40
+      limit: 20
       filter: {frontmatter: {title: {ne: ""}, tutorial: {ne: null}}},
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
