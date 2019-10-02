@@ -17,6 +17,7 @@
     "gatsby-theme-ultronele": "*"
   },
   "devDependencies": {
+    "plop": "^2.3.0",
     "prettier": "^1.18.2"
   }
 }
