@@ -20,11 +20,17 @@
     "lms"
   ],
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "chokidar": "^3.0.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "fsevents": "^2.3.2",
     "gatsby": "^3.1.2",
     "gatsby-cli": "^3.1.0",
+    "gatsby-dev-cli": "^3.1.0",
+    "graphql": "^15.5.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "typescript": "^4.2.3"
   }
 }

@@ -7,14 +7,14 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Theme Ultronele Demo",
-    author: `liwenzhi`,
-    description: `Ultronele - the Fastest Elearning Engine in the world`,
-    siteUrl: `https://ultronele.netlify.com`,
-    signiture: `Robin w li`,
+    title: "Gatsby Theme E-learning",
+    author: `modified`,
+    description: `e-learning - easy...`,
+    siteUrl: `https://nodert.com`,
+    signiture: `SourceRT`,
     logoImg:`/logo_ultronele.png`,
     social: {
-      twitter: `lwz75121`,
+      twitter: `justspeaknowcom`,
     },
     menus: [
       {name: 'HOME', url: '/'},
@@ -29,8 +29,14 @@ module.exports = {
     {
       resolve: "gatsby-theme-ultronele",
       options: {
-        // contentPath: `content`
+        // contentPath: `/usr/local/lsws/nodert/dev3000/gatsby-theme-ultronele/theme`
       }
     }
   ],
+}
+module.exports = {
+  proxy: {
+    prefix: "/api",
+    url: "http://nodert.com/api/",
+  },
 }
