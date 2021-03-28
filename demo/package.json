@@ -14,8 +14,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.13.1",
-    "gatsby-theme-ultronele": "*"
+    "babel-eslint": "^7.2.3",
+    "gatsby": "^3.1.2",
+    "gatsby-theme-ultronele": "*",
+    "joi": "^17.4.0"
   },
   "devDependencies": {
     "inquirer": "^6.2.2",
