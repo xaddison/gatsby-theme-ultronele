@@ -37,6 +37,6 @@ module.exports = {
 module.exports = {
   proxy: {
     prefix: "/api",
-    url: "http://nodert.com/api/",
+    url: "https://nodert.com/api/",
   },
 }
